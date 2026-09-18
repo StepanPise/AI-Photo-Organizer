@@ -1,5 +1,35 @@
 # AI Photo Organizer
 
+Local web application designed to automatically analyze, organize, and filter unstructured photo archives. By combining on-device AI face recognition with metadata extraction, it allows users to dynamically search their galleries by people, locations, dates, and image dimensions—all without relying on cloud services.
+
+## Getting Started
+
+### Prerequisites
+
+* Docker Desktop
+* Python 3.11+
+* Google Chrome *(optional, used for App Mode)*
+
+### Installation
+
+1. Open the project root directory.
+2. Navigate to the `setup` folder and run `install.bat`.
+3. Start Docker Desktop.
+4. Run `start.bat` from the project root.
+
+The script will automatically:
+
+* Start the PostgreSQL database via Docker (`5433:5432`)
+* Start the FastAPI backend at `http://127.0.0.1:8000`
+* Open the application in Google Chrome App Mode
+
+### Stopping the Application
+
+Press `Ctrl + C` in the terminal running `start.bat`.
+
+To stop the PostgreSQL container, stop it from Docker Desktop.
+
+
 
 
 ## Main Features
